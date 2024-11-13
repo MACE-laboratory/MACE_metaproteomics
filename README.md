@@ -6,6 +6,7 @@ example:
 ```
 thermorawfileparser -i SAMPLE.raw  -N -f 1 -g
 ```
+This results into the mzML.gz files that can be used to run sage.
 
 # 2. Running Sage to perform LFQ
 example: 
