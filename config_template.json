@@ -9,7 +9,7 @@
 		"restrict": "P"},
 	"decoy_tag": "rev_",
         "generate_decoys": true,
-        "fasta": "/home/mabourqu/Desktop/proteomics_comparison/data/human_trypsin_meta.faa"},
+        "fasta": "DATABASE.faa"},
     "quant": {"lfq": true, "lfq_settings": {"spectral_angle": 0.7, "ppm_tolerance": 5.0}},
     "min_peaks": 15,
     "max_peaks": 150,
@@ -26,9 +26,10 @@
     "variable_mods": {"M": [15.9949], 
         	      "[^": 42.0},
     "max_variable_mods": 5,
-    "precursor_tol": {"ppm": [-10, 10]},
-    "fragment_tol": {"ppm": [-50, 50]},
+    "precursor_tol": {"ppm": [-20, 20]},
+    "fragment_tol": {"ppm": [-40, 40]},
     "isotope_errors": [0,2],
     "mzml_paths": [
-	    "/home/mabourqu/Desktop/proteomics_comparison/data/EV_240403_0859_Lumos_Sample03.mzML.gz"]
+	    "FILE1.mzML.gz",
+    	    "FILE2.mzML.gz"]
 }
