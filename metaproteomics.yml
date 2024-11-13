@@ -1,0 +1,11 @@
+name: metaproteomics
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - python==3.10.15
+  - sage-proteomics==0.14.7
+  - thermorawfileparser==1.4.5
+  -  pip==24.2
+  - pip:
+      - picked-group-fdr==0.7.3
