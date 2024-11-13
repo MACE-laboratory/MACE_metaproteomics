@@ -1,0 +1,34 @@
+{
+    "database": {
+        "bucket_size": 8192,
+	"enzyme": {
+		"missed_cleavage": 2,
+		"min_len": 7,
+		"max_len": 50,
+		"cleave_at": "KR",
+		"restrict": "P"},
+	"decoy_tag": "rev_",
+        "generate_decoys": true,
+        "fasta": "/home/mabourqu/Desktop/proteomics_comparison/data/human_trypsin_meta.faa"},
+    "quant": {"lfq": true, "lfq_settings": {"spectral_angle": 0.7, "ppm_tolerance": 5.0}},
+    "min_peaks": 15,
+    "max_peaks": 150,
+    "fragment_min_mz": 200,
+    "fragment_max_mz": 1800,
+    "deisotope": true,
+    "chimera": false,
+    "wide_window": false,
+    "predict_rt": true,
+    "min_matched_peaks": 4,
+    "report_psms": 1,
+    "max_fragment_charge": 1,
+    "static_mods": {"C": 57.02146},
+    "variable_mods": {"M": [15.9949], 
+        	      "[^": 42.0},
+    "max_variable_mods": 5,
+    "precursor_tol": {"ppm": [-10, 10]},
+    "fragment_tol": {"ppm": [-50, 50]},
+    "isotope_errors": [0,2],
+    "mzml_paths": [
+	    "/home/mabourqu/Desktop/proteomics_comparison/data/EV_240403_0859_Lumos_Sample03.mzML.gz"]
+}
