@@ -10,7 +10,7 @@ thermorawfileparser -i SAMPLE.raw  -N -f 1 -g
 # 2. Running Sage to perform LFQ
 example: 
 ```
-sage example_config.json --batch-size 12
+sage config.json --batch-size 12
 ```
 
 # 3. Extract protein intensities with PickedGroupFDR
