@@ -2,13 +2,21 @@
 Massimo Bourquin, 2024
 
 # 1. Raw to mzML conversion
-example: `thermorawfileparser -i SAMPLE.raw  -N -f 1 -g`
+example: 
+```
+thermorawfileparser -i SAMPLE.raw  -N -f 1 -g
+```
 
 # 2. Running Sage to perform LFQ
-example: `sage example_config.json --batch-size 12`
+example: 
+```
+sage example_config.json --batch-size 12
+```
 
 # 3. Extract protein intensities with PickedGroupFDR
-example: `python3 -u -m picked_group_fdr \
+example: 
+```
+python3 -u -m picked_group_fdr \
    --protein_group_fdr_threshold 0.05 \
    --fasta DATABASE \
    --sage_results results.sage.tsv \
@@ -17,4 +25,5 @@ example: `python3 -u -m picked_group_fdr \
    --output_format fragpipe \
    --do_quant \
    --lfq_min_peptide_ratios 1 \
-   --methods sage`
+   --methods sage
+```
