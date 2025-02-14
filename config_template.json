@@ -26,8 +26,8 @@
     "variable_mods": {"M": [15.9949], 
         	      "[^": 42.0},
     "max_variable_mods": 5,
-    "precursor_tol": {"ppm": [-20, 20]},
-    "fragment_tol": {"ppm": [-40, 40]},
+    "precursor_tol": {"ppm": [-10, 10]},
+    "fragment_tol": {"ppm": [-50, 50]},
     "isotope_errors": [0,2],
     "mzml_paths": [
 	    "FILE1.mzML.gz",
