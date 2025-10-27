@@ -6,30 +6,14 @@
 		"min_len": 7,
 		"max_len": 50,
 		"cleave_at": "KR",
-		"restrict": "P"},
-        "static_mods": {
-		"C": 57.02146
-	},
-    	"variable_mods": {
-		"M": [15.9949]
+		"restrict": "P"
 	},
 	"decoy_tag": "rev_",
         "generate_decoys": true,
-        "fasta": "DATABASE.faa"
-    },
-    "quant": {
-	    "lfq": true, 
-	    "lfq_settings": {
-		    "spectral_angle": 0.7, 
-		    "ppm_tolerance": 5.0
-	    }
-    },
-    "precursor_tol": {
-	    "ppm": [-10, 10]
-    },
-    "fragment_tol": {
-	    "da": [-0.05, 0.05]
-    },
+	"static_mods": {"C": 57.02146},
+    	"variable_mods": {"M": [15.9949]},
+        "fasta": "/data/proteomics/databases/contaminants_and_mags2025.faa"},
+    "quant": {"lfq": true, "lfq_settings": {"spectral_angle": 0.7, "ppm_tolerance": 5.0}},
     "min_peaks": 15,
     "max_peaks": 150,
     "fragment_min_mz": 200,
@@ -42,8 +26,7 @@
     "report_psms": 1,
     "max_fragment_charge": 1,
     "max_variable_mods": 5,
+    "precursor_tol": {"ppm": [-10, 10]},
+    "fragment_tol": {"da": [-0.3, 0.3]},
     "isotope_errors": [0,2],
-    "mzml_paths": [
-	    "FILE1.mzML.gz",
-    	    "FILE2.mzML.gz"]
-}
+    "mzml_paths": ["file1.mzML.gz", "file2.mzML.gz"]}
